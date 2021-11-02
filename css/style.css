@@ -50,12 +50,16 @@ main{
 }
 
 .mg-start{
-  height: calc(100vh - 140px);
   text-align: center;
+  font-weight: bold;
+  display: none;
+}
+
+.mg-text-play{
+  height: calc(100vh - 140px);
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: bold;
 }
 
 .mg-grid{
@@ -71,6 +75,7 @@ main{
   width: 352px;
   height: 352px;
   border: 1px solid white;
+  display: none;
 }
 
 .mg-crazy-sq{
@@ -84,6 +89,46 @@ main{
   color:white;
 }
 
+/* easy */
+
+.mg-easy{
+  width: 402px;
+  height: 402px;
+  border: 1px solid white;
+  display: none;
+}
+
+.mg-easy-sq{
+  width: 40px;
+  height: 40px;
+  border: 1px solid white;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/* hard */
+
+.mg-hard{
+  width: 362px;
+  height: 362px;
+  border: 1px solid white;
+  display: none;
+}
+
+.mg-hard-sq{
+  width: 40px;
+  height: 40px;
+  border: 1px solid white;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
 /* color */
 
 .mg-red{
@@ -92,6 +137,10 @@ main{
 
 .mg-blue{
   background-color: blue;
+}
+
+.mg-active{
+  display: block;
 }
 
 /* FOOTER */

@@ -20,9 +20,9 @@
       <nav>
         <span>Difficolta:</span>
         <select id="mg-select" class="form-select form-select-sm" aria-label=".form-select-sm example">
-          <option value="1">Crazy</option>
-          <option value="2">Easy</option>
-          <option value="3">Hard</option>
+          <option value="Crazy">Crazy</option>
+          <option value="Easy">Easy</option>
+          <option value="Hard">Hard</option>
         </select>
         <button type="button" class="btn btn-primary btn-sm">Play</button>
       </nav>
@@ -34,13 +34,22 @@
       
       <div class="mg-grid">
 
-        <!-- <div class="mg-start">
-          <span>Seleziona il livello di difficolta e genera la griglia</span>
-        </div> -->
+        <div class="mg-start mg-active">
+          <div class=mg-text-play>
+            <span>Seleziona il livello di difficolta e genera la griglia</span>
+          </div>
+        </div>
 
         <div class="mg-crazy clearfix">
           <div class="mg-crazy-sq">
           </div>
+        </div>
+
+        <div class="mg-easy clearfix">
+          <div class="mg-easy-sq"></div>
+        </div>
+
+        <div class="mg-hard clearfix">
         </div>
 
       </div>
