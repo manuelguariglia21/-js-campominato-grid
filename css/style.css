@@ -69,6 +69,10 @@ main{
   height: calc(100vh - 140px);
 }
 
+/* sq */
+.mg-sq{
+  cursor: pointer;
+}
 /* crazy */
 
 .mg-crazy{
