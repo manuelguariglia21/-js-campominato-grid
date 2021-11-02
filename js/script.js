@@ -1,13 +1,10 @@
+
+//variabili
 const level = document.getElementById('mg-select');
-
 const playBtn = document.getElementById('playBtn');
-
 const start = document.querySelector('.mg-start');
-
 const crazy = document.querySelector('.mg-crazy');
-
 const easy = document.querySelector('.mg-easy');
-
 const hard = document.querySelector('.mg-hard');
 
 let crazyCheck = false;
@@ -34,9 +31,7 @@ playBtn.addEventListener("click", function(){
       crazySq.innerHTML = i;
 
       //sfondo blu al click
-      crazySq.addEventListener("click", function(){
-        crazySq.classList.add('mg-blue');
-      });
+      clickBlue(crazySq);
 
       //check
       crazyCheck = true;
@@ -57,9 +52,7 @@ playBtn.addEventListener("click", function(){
       easySq.innerHTML = i;
       
       //sfondo blu al click
-      easySq.addEventListener("click", function(){
-        easySq.classList.add('mg-blue');
-      });
+      clickBlue(easySq);
 
       //check
       easyCheck = true;
@@ -80,9 +73,7 @@ playBtn.addEventListener("click", function(){
       hardSq.innerHTML = i;
 
       //sfondo blu al click
-      hardSq.addEventListener("click", function(){
-        hardSq.classList.add('mg-blue');
-      });
+      clickBlue(hardSq);
 
       //check
       hardCheck = true;
@@ -90,3 +81,13 @@ playBtn.addEventListener("click", function(){
   }
 
  });
+
+
+
+ //funzione colore
+
+ function clickBlue(div){
+  div.addEventListener("click", function(){
+    div.classList.add('mg-blue');
+  });
+ }

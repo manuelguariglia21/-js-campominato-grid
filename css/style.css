@@ -29,6 +29,8 @@ nav span{
 .logo{
   display: flex;
   justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .logo img{
@@ -38,7 +40,7 @@ nav span{
 }
 
 .logo span{
-  font-size: 30px;
+  font-size: 20px;
   font-weight: bolder;
 }
 
