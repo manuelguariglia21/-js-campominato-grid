@@ -1,0 +1,75 @@
+.mg-container{
+width: 80%;
+margin: 0 auto;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+}
+
+nav{
+  display: flex;
+  justify-content: flex-end;
+  height: 30px;
+}
+
+nav span{
+  padding-right: 20px;
+}
+
+.logo{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.logo img{
+  width: 50px;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
+.logo span{
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+/* MAIN */
+
+main{
+  background-color: #70ffd6;
+  height: calc(100vh - 140px);
+}
+
+.mg-start{
+  height: calc(100vh - 140px);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.mg-grid{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 140px);
+}
+
+/* crazy */
+
+.mg-crazy{
+  width: 350px;
+  height: 350px;
+  border: 2px solid white;
+}
+
+/* FOOTER */
+
+footer{
+  line-height: 50px;
+  height: 50px;
+}
