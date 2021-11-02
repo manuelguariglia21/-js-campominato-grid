@@ -10,14 +10,16 @@ const easy = document.querySelector('.mg-easy');
 
 const hard = document.querySelector('.mg-hard');
 
-
+let crazyCheck = false;
+let easyCheck = false;
+let hardCheck = false;
 
 //Click Play
 playBtn.addEventListener("click", function(){ 
 
   start.classList.remove('mg-active');
 
-  if(level.value == "Crazy"){
+  if(level.value == "Crazy" && crazyCheck === false){
     console.log('Crazy', level.value);
     //visibilità
     easy.classList.remove('mg-active');
@@ -35,9 +37,12 @@ playBtn.addEventListener("click", function(){
       crazySq.addEventListener("click", function(){
         crazySq.classList.add('mg-blue');
       });
+
+      //check
+      crazyCheck = true;
     }
   }
-  else if(level.value == "Easy"){
+  else if(level.value == "Easy" && easyCheck === false){
     console.log('Easy', level.value);
     //visibilità
     crazy.classList.remove('mg-active');
@@ -55,9 +60,12 @@ playBtn.addEventListener("click", function(){
       easySq.addEventListener("click", function(){
         easySq.classList.add('mg-blue');
       });
+
+      //check
+      easyCheck = true;
     }
   }
-  else if(level.value == "Hard"){
+  else if(level.value == "Hard" && hardCheck === false){
     console.log('Hard', level.value);
     //visibilità
     crazy.classList.remove('mg-active');
@@ -75,6 +83,9 @@ playBtn.addEventListener("click", function(){
       hardSq.addEventListener("click", function(){
         hardSq.classList.add('mg-blue');
       });
+
+      //check
+      hardCheck = true;
     }
   }
 
