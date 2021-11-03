@@ -15,6 +15,7 @@ let hardCheck = false;
 playBtn.addEventListener("click", function(){ 
 
   start.classList.remove('mg-active');
+  
 
   if(level.value == "Crazy"){
     console.log('Crazy', level.value);
